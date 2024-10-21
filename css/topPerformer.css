@@ -1,0 +1,153 @@
+.topPerformer {
+  background-color: #49269c;
+  display: flex;
+  flex-direction: column;
+}
+
+.topPerformerPlayerCard {
+  height: 190px;
+  font-family: "Roboto", Arial, Sans-Serif;
+  position: relative;
+  padding: 20px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 4rem 0;
+  flex-direction: row;
+}
+
+.topPerformerPlayerCardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+.topPerformerPlayerCard1 {
+  background-image: linear-gradient(#3ac1c1, #076296),
+    url("../assests/highlight/image\ copy\ 41.png");
+  background-size: cover, contain !important;
+  background-size: 30rem;
+  background-repeat: no-repeat;
+}
+.topPerformerPlayerCard2 {
+  background-image: url("../assests/highlight/image\ copy\ 41.png");
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#fddf6b, #e01f26);
+}
+.topPerformerPlayerCard3 {
+  background-image: linear-gradient(#fddf6b, #e01f26);
+}
+.topPerformerPlayerCard4 {
+  background-image: linear-gradient(#3ac1c1, #076296);
+}
+.topPerformerPlayerCard5 {
+  background-image: linear-gradient(#f13852, #e51e26);
+}
+.topPerformerPlayerCard6 {
+  background-image: linear-gradient(#f13852, #e51e26);
+}
+
+.topPerformerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.topPerformerName {
+  /* margin-bottom: 5px; */
+  text-transform: uppercase;
+  text-align: right;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 0px;
+  display: flex;
+  white-space: nowrap;
+  /* margin-block-end: 10px; */
+  /* line-height: 1.2; */
+}
+
+.topPerformerTitle {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px 10px;
+  line-height: 1.2;
+  background: rgba(15, 15, 15, 0.5);
+  border-radius: 4px;
+}
+
+.topPerformerDg {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 15px;
+  line-height: 1.2;
+  margin-bottom: -5px;
+}
+.topPerformerNo {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 35px;
+  padding: 0px 0px;
+  margin: 0%;
+}
+
+.topPerformerHead {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 5%;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.topPerformerHead1 {
+  font-size: 35px;
+  color: white;
+}
+
+.topPerformerHead2 {
+  font-size: 15px;
+  color: white;
+}
+
+.playerImage {
+  height: 230px;
+  transform: translateY(-60px);
+  margin-bottom: -60px;
+  transition: transform 0.3s ease-in-out; /* Transition for the card */
+}
+
+.tempPicCard {
+  width: 50px;
+}
+
+.topPerformerPlayerCard:hover .playerImage {
+  transform: scale(1.1) translateY(-66px); /* Zoom effect */
+}
+
+@media (max-width: 840px) {
+  .topPerformerPlayerCardContainer {
+    gap: 40px;
+    padding: 25px;
+  }
+  .topPerformerPlayerCard {
+    margin-block: 0;
+    width: 100%;
+    /* padding: 20px; */
+
+    height: 190px;
+  }
+}

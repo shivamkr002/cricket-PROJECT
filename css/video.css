@@ -1,0 +1,99 @@
+.videoTempHeader {
+  background-color: blueviolet;
+  padding: 10px;
+  color: white;
+}
+
+.videoContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 1140px;
+  padding: 20px;
+}
+
+.videoContainerInd {
+  display: -ms-inline-grid;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
+  background-color: #241546;
+  display: inline-block; /* The div will fit its content */
+  width: auto; /* Ensures that the width is based on content size */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.videoImg {
+  object-fit: contain;
+  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.videoImg:hover {
+  transform: scale(1.2);
+}
+/* 
+.videoContainerInd a.otherLinks {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 0;
+} */
+.videoImg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.videoImg::after {
+  position: absolute;
+  background: #310131 url("../assests/highlight/image_copy_19.png") no-repeat
+    18px center / 11px !important;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  content: "";
+  width: 45px;
+  height: 45px;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  display: flex;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.videoContainerIndCaption {
+  color: white;
+  padding: 20px;
+}
+
+.videoContainerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoTempFooter {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

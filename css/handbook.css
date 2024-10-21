@@ -1,0 +1,231 @@
+.handBookContainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #49269c;
+  overflow: hidden;
+
+  /* gap: 20px; */
+}
+.sh-gragiant-div {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 1;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(72, 8, 56, 0) 0%, #381f73 90%);
+}
+
+.handBookContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.handBookLatestNews {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.handBookLatestVideos {
+  flex: 1;
+  box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.handBookLatestNewsHeader2,
+.handBookLatestVideoHeader2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.handBookLatestNewsHeader,
+.handBookLatestVideoHeader {
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+  gap: 5vw;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.handBookLatestVideoHeader1,
+.handBookLatestNewsHeader1 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.handBookLatestNewsHeader1-a,
+.handBookLatestVideoHeader1-a {
+  padding: 10px 0px;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.handBookLatestNewsHeader1-b,
+.handBookLatestVideoHeader1-b {
+  padding: 10px 0px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.handBookLatestVideoHeader2-a,
+.handBookLatestNewsHeader2-b,
+.handBookLatestNewsHeader2-a,
+.handBookLatestVideoHeader2-b {
+  background-color: wheat;
+  padding: 6px 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .handBookLatestVideoHeader2,
+  .handBookLatestNewsHeader2 {
+    display: none;
+  }
+}
+
+.handBookContainerSlider {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.handBookContainerSliderImage {
+}
+
+.handBookContainerSliderImageInd {
+  object-fit: contain;
+  display: block;
+}
+
+.tournment-handbook-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f2c01f;
+  padding: 0px 20px;
+  width: 80vw;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  height: fit-content;
+  flex: 1;
+}
+
+.tournment-handbook-box-middle {
+  /* max-height: 300px; */
+  /* position: absolute; */
+  /* margin-top: -34px; */
+  overflow: hidden;
+  height: 120px;
+}
+
+.img-trophy {
+  width: 320px;
+  max-height: 300px;
+  top: -24px;
+  position: relative;
+}
+
+.tournment-handbook-box-left-left {
+  width: 110px;
+}
+
+.tournment-handbook-box-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.tournment-handbook-box-left-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tournment-handbook-box-left-right-up {
+  font-family: Bebas Neue;
+  color: #32176a;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tournment-handbook-box-left-right-down {
+  background-color: white;
+  padding: 0px 4px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-left: -13px;
+}
+
+.tournment-handbook-box-right-button {
+  white-space: nowrap;
+
+  display: inline-block;
+  padding: 10px 2rem;
+  border-radius: 8px;
+  background: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px #0003;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.tournment-handbook-box-right-button:hover {
+  background: linear-gradient(-90deg, #381f73 0.22%, #6a3ad9 50.04%);
+  color: #fff;
+}
+
+@media (max-width: 786px) {
+  .tournment-handbook-box {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* For absolute positioning of item 3 */
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .tournment-handbook-box-left {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .tournment-handbook-box-right-button {
+    position: absolute;
+    bottom: 0px; /* Positions item 3 over the second item */
+    left: 50%; /* Centers it horizontally in the container */
+    transform: translateX(-50%); /* Adjusts it to perfectly center */
+  }
+
+  .img-trophy {
+    top: 10px;
+    width: 220px;
+  }
+}

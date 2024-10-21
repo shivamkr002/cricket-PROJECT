@@ -1,0 +1,305 @@
+.match {
+  background-color: rgb(43, 7, 110);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.matchContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 40px;
+  object-fit: contain;
+  margin-top: 70px;
+}
+
+.matchCardContain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 20px; */
+}
+
+.matchCard {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.matchHeader {
+  padding-block: 2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: #381f73;
+  letter-spacing: 0.05em;
+  clear: both;
+  overflow: hidden;
+  width: 100vw;
+  padding-left: 40px;
+}
+
+/* Override Bootstrap's btn-secondary styles */
+.btn-secondary {
+  background-color: white !important; /* Set button background to white */
+  color: black !important; /* Set button text color to white */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+}
+
+/* Override the dropdown-menu background */
+.dropdown-menu {
+  background-color: white !important; /* Set dropdown background to white */
+}
+
+/* Set dropdown item text color to white */
+.dropdown-item {
+  color: black !important;
+}
+
+/* Optional: Change text color and background on hover */
+.dropdown-item:hover {
+  background-color: #f8f9fa !important; /* Light grey background on hover */
+  color: black !important; /* Change text color to black on hover */
+}
+
+.matchCard1 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+.matchCardHeader-a {
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.matchCardHeader1 {
+  background-color: #ffd85c;
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid #dbae1c;
+  padding: 0px 10px;
+  color: #140a2d;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-block-end: 2px;
+  margin-right: 1rem;
+}
+/* .matchCard:nth-of-type(odd) {
+  background: #f0e9ff;
+} */
+/* 
+.matchCardContain:nth-of-type(even) {
+  background: #ffffff;
+} */
+
+/* .matchContent-a{
+    width: 10px;
+    height: auto;
+} */
+
+.matchContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.matchCardHeader-b {
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.matchCard2abw {
+  color: #777777;
+  font-size: 11px;
+  font-weight: 400;
+}
+.matchCard2ateam2,
+.matchCard2ateam1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #00060c;
+}
+
+.matchCardHeader2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.matchCard2 {
+  border-left: 2px rgba(125, 124, 124, 0.482) solid;
+  border-right: 2px rgba(125, 124, 124, 0.482) solid;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.matchCard2b {
+}
+
+.matchCard2a {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+  align-items: center;
+}
+
+.matchCard2b {
+  background: #eae6ec;
+  color: #300030;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 5px 0;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.matchCard2c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matchCard2cWrapper {
+  justify-content: space-between;
+
+  display: flex;
+
+  width: 70%;
+}
+
+.score1-a {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.score1-b {
+  color: rgba(0, 6, 12, 0.75);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.matchCard3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.matchCard3-b {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.matchCard3-a {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  color: #300030;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.matchCardPart1 {
+  position: relative;
+  background-color: transparent;
+  background: #241546;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 13px;
+  line-height: 16px;
+  z-index: 1;
+}
+
+.CustomizeToggle {
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  top: 13rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #241546;
+  color: white;
+}
+
+.inactive {
+  color: #999999;
+}
+
+@media (max-width: 750px) {
+  .matchCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 72vw;
+  }
+
+  .matchCard1 {
+    width: 72%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .matchCard2b,
+  .matchCard2c {
+    margin-top: 10px;
+  }
+
+  .matchCard2a {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .matchContent-b {
+    display: none;
+  }
+
+  .matchCard2ateam1 {
+    padding-right: 15px;
+  }
+
+  .matchContent {
+    padding-bottom: 0px;
+    margin-left: -0.5rem;
+    width: 90%;
+  }
+
+  .CustomizeToggle {
+    font-size: 12px;
+  }
+}

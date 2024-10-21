@@ -1,0 +1,230 @@
+.hero-wrapper-caption-sh {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1.6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4rem;
+  font-family: "Bebas Neue";
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 52px;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  text-align: center;
+}
+.hero-wrapper-caption-sh:hover {
+  color: #f2c01f;
+}
+.carousel-control-next-icon {
+  border: 10px solid #270077;
+  padding: 16px;
+  border-radius: 30px;
+  background-color: #270077;
+}
+.carousel-control-prev-icon {
+  border: 10px solid #270077;
+  padding: 16px;
+  border-radius: 30px;
+  background-color: #270077;
+}
+.result {
+  background-color: #32176a;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url(../assests//halfCircle-pattern.84086dd1d172df94.png),
+    url(../assests/halfCircle-pattern.84086dd1d172d.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%; /* Ensures the height covers 100% */
+  background-position: top right, top left; /* Aligns the image to the left top corner */
+}
+
+.resultContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding-block: 2rem;
+}
+
+.resultContainer-1 {
+  /* color: #fbc904 !important; */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.resultContainer-1a {
+  color: #fbc904 !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+.resultContainer-1 {
+  white-space: nowrap;
+  border-bottom: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resultContainer-4a-team {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.resultContainer-4a-score {
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding-right: 20px;
+}
+.resultContainer-4a-over {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* .resultContainer-5 {
+  
+  background-color: #fbc904;
+ 
+  border-radius: 5px;
+  width: 30vw;
+  text-align: center;
+  color: black;
+  max-width: 200px;
+} */
+.resultContainer-5-text {
+  padding: 10px;
+  margin-top: 35px;
+  transition: all 0.6s ease-in-out;
+  width: 15rem;
+  background: #f2c01f;
+  vertical-align: middle;
+  outline: 0;
+  box-shadow: 1px 1px 1px hsla(0, 0%, 9%, 0.3);
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: all 0.2s linear;
+  border-radius: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  color: #300030;
+  padding: 0.8rem;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.resultContainer-3 {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.resultContainer-4 {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.resultContainer-4a,
+.resultContainer-4c {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.resultContainer-4a-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resultContainer-4c-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.resultContainer-4a-2,
+.resultContainer-4c-1 {
+  width: 80px;
+  height: auto;
+}
+
+.resultContainer-4b {
+  color: #9568ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 550px) {
+  .result {
+    background-position: center right, center left;
+    background-size: auto 60%; /* Each image covers 50% of the width and 100% of the parent's height */
+  }
+  .resultContainer-4 {
+    gap: 15px;
+  }
+
+  .resultContainer-4a {
+    gap: 0px;
+  }
+
+  .resultContainer-4a-1 {
+    font-size: 12px;
+  }
+
+  .resultContainer-4a-2 {
+    width: 60px;
+    height: auto;
+    align-items: center;
+    display: flex;
+
+    /* justify-content: center; */
+  }
+
+  .resultContainer-4c-1 {
+    width: 60px;
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .resultContainer-4c {
+    gap: 0px;
+  }
+  .resultContainer-4c-2 {
+    font-size: 12px;
+  }
+}
